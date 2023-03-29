@@ -1,0 +1,9 @@
+<div *ngFor="let task of listTask$ | async">
+  <input
+    type="checkbox"
+    [checked]="task.status"
+    (change)="changeStatusTask(task.id)"
+  />
+  <span [ngClass]="{ completada: task.status }">{{ task.title }}</span>
+  <button (click)="removeTask(task.id)">Eliminar</button>
+</div>

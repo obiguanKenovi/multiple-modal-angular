@@ -1,0 +1,29 @@
+<!-- <button class="btn btn-primary" (click)="openFirstModal(firstModal)">Abrir primer modal</button>
+
+<ng-template #firstModal>
+  <app-first-modal
+    [isTransparent]="isFirstModalTransparent"
+    (close)="closeFirstModal()"
+    (openSecond)="openSecondModal(secondModal)"
+  ></app-first-modal>
+</ng-template>
+
+<ng-template #secondModal>
+  <app-second-modal (close)="closeSecondModal()"></app-second-modal>
+</ng-template> -->
+
+
+<button class="btn btn-primary" (click)="openFirstModal(firstModal)">Abrir primer modal</button>
+
+<ng-template #firstModal>
+  <app-first-modal
+    [isTransparent]="isFirstModalTransparent"
+    (close)="closeFirstModal()"
+    (openSecond)="openSecondModal(secondModal)"
+  ></app-first-modal>
+</ng-template>
+
+<ng-template #secondModal>
+  <app-second-modal (close)="closeSecondModal()"></app-second-modal>
+</ng-template>
+
